@@ -6,7 +6,14 @@
 -- - Strand verbindet sich normalerweise mit dem Meer, aber damit die "verbindung" entstehen kann benötigt der Strand Wasser Level 1
 -- 	(kein anderes Level)
 -- - Alle anderen BodenIDs sind unbaubares Grass, kann man auch zum Vorteil einsetzen!
+$ifnot GROUNDS_LIBRARY100_MM
+--zeile bitte ignorieren/ignore this line
+GROUNDS_LIBRARY100_MM= ""
+
 Grounds = {
+
+
+	
 	--0x0X
 	WATER1 = 0,
 	WATER2 = 1,
@@ -71,3 +78,4 @@ Grounds = {
 function Grounds.SetGround(x,y,radius,groundID)
 	return dbg.sg(x,y,radius,groundID) -- ret nil
 end
+$end
