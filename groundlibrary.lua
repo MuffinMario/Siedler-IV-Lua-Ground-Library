@@ -23,6 +23,7 @@ Grounds = {
 	WATER6 = 5,
 	WATER7 = 6,
 	WATER8 = 7,
+	WATER_BEACH = 8,
 	
 	--0x1X
 	GRASS = 16 + 0,
